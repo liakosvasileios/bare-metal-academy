@@ -1,0 +1,23 @@
+{
+  "name": "Bare Metal Academy",
+  "short_name": "BareMetal",
+  "description": "Hardware reverse engineering, IoT, data recovery, digital forensics, x86-64/ARM64 assembly, OS internals and computer architecture: lessons, quizzes, exams and lab tools.",
+  "id": "/",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "orientation": "any",
+  "background_color": "#0a0f0d",
+  "theme_color": "#0a0f0d",
+  "categories": ["education", "developer", "utilities"],
+  "icons": [
+    { "src": "icons/icon-192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "icons/icon-512.png", "sizes": "512x512", "type": "image/png" },
+    { "src": "icons/icon-maskable-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+  ],
+  "shortcuts": [
+    { "name": "Library", "url": "/#/learn" },
+    { "name": "Practice", "url": "/#/practice" },
+    { "name": "Lab", "url": "/#/lab" }
+  ]
+}

@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Bare Metal Academy</title>
+  <meta name="description" content="Hardware reverse engineering, embedded/IoT hacking, data recovery, digital forensics, x86-64 & ARM64 assembly, operating systems and computer architecture — lessons, quizzes, exams and lab tools. Works offline.">
+  <meta name="theme-color" content="#0a0f0d">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="BareMetal">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="icon" type="image/png" sizes="32x32" href="icons/favicon-32.png">
+  <link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="#/"><span class="chip-logo" aria-hidden="true"></span><span>Bare Metal<b>Academy</b></span></a>
+    <form class="search" id="searchForm" role="search">
+      <input id="searchInput" type="search" placeholder="Search lessons & glossary…" autocomplete="off" aria-label="Search">
+    </form>
+  </header>
+
+  <main id="view" tabindex="-1"></main>
+
+  <nav class="tabbar" aria-label="Main">
+    <a href="#/" data-tab="home"><svg viewBox="0 0 24 24"><path d="M3 11l9-7 9 7v9a1 1 0 0 1-1 1h-5v-6H9v6H4a1 1 0 0 1-1-1z"/></svg><span>Home</span></a>
+    <a href="#/learn" data-tab="learn"><svg viewBox="0 0 24 24"><path d="M4 5a2 2 0 0 1 2-2h13v16H6a2 2 0 0 0-2 2zM4 21V5M8 7h7M8 11h7"/></svg><span>Learn</span></a>
+    <a href="#/practice" data-tab="practice"><svg viewBox="0 0 24 24"><path d="M9 11l3 3 8-8M20 12v7a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h9"/></svg><span>Practice</span></a>
+    <a href="#/lab" data-tab="lab"><svg viewBox="0 0 24 24"><path d="M9 3v6L4 19a1.5 1.5 0 0 0 1.3 2h13.4A1.5 1.5 0 0 0 20 19l-5-10V3M8 3h8M7 15h10"/></svg><span>Lab</span></a>
+    <a href="#/progress" data-tab="progress"><svg viewBox="0 0 24 24"><path d="M4 20V10M10 20V4M16 20v-7M22 20H2"/></svg><span>Progress</span></a>
+  </nav>
+
+  <div id="toast" role="status" aria-live="polite"></div>
+
+  <script src="data/modules.js"></script>
+  <script src="data/glossary.js"></script>
+  <script src="data/questions/foundations.js"></script>
+  <script src="data/questions/architecture.js"></script>
+  <script src="data/questions/x86.js"></script>
+  <script src="data/questions/arm64.js"></script>
+  <script src="data/questions/os.js"></script>
+  <script src="data/questions/binaries.js"></script>
+  <script src="data/questions/exploitation.js"></script>
+  <script src="data/questions/debugging.js"></script>
+  <script src="data/questions/electronics.js"></script>
+  <script src="data/questions/interfaces.js"></script>
+  <script src="data/questions/hwtools.js"></script>
+  <script src="data/questions/iot.js"></script>
+  <script src="data/questions/wireless.js"></script>
+  <script src="data/questions/mobile.js"></script>
+  <script src="data/questions/hwattacks.js"></script>
+  <script src="data/questions/storage.js"></script>
+  <script src="data/questions/filesystems.js"></script>
+  <script src="data/questions/recovery.js"></script>
+  <script src="data/questions/forensics.js"></script>
+  <script src="data/questions/artifacts.js"></script>
+  <script src="data/questions/memforensics.js"></script>
+  <script src="lab.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
